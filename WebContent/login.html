@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartstore--重庆邮电大学18栋705最大的在线商城</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+</head>
+<link rel="stylesheet" href="css/login.css">
+<body>
+    <div class="page">
+    	<div class="loginsuccess" style="display : none;">
+            <div class="sucwrap">
+                <div class="success"><img src="img/success.png"></div>
+                <div class="suctext">
+                    <h2>登陆成功!!!</h2>
+                    <span>欢迎你第<span id="logintimes"></span>次登陆商城</span>
+                    <div>将在三秒后进入商城<a href="storelist.jsp">立即进入</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" title="smartstore--重庆邮电大学18栋705最大的在线商城"><img src="img/logo(hd).png"><img src="img/bluelogo.png" ></a>
+                <span><a href="register.html">没有账号?点我注册</a></span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="add"><img src="img/logo-white(hd).png"></div>
+            <div class="content">
+                <div class="loginbox_wrap">
+                    <div class="loginbox">
+                        <div class="login_content">
+                            <div class="loginpwd">账号密码登陆</div>
+                            <div class="loginform" action="checklogin.jsp">
+                                <input id="memberid" type="text" name="memberID" maxlength="10" placeholder="用户名" autocomplete="off">
+                                <input id="password" type="password" name="pwd" maxlength="20" placeholder="密码">
+                                <input id="btnLoad" type="button" name="" value="登录">
+                            </div>
+                            <div id="divfail" style="text-align: center; color: red; display: none;">登陆失败,请检查用户名和密码是否正确</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/login.js"></script>
+</html>

@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* background-color: rgb(30, 210, 255); */
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+a{  
+    color:#fff;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+em{
+    font-style: normal;
+    font-size: 12px;
+}
+.page{
+    width: 100%;
+}
+.smallimg{
+    margin: 5px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+.smallimg img{
+    width: 80px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.header{
+    padding: 22px 0;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 990px;
+}
+.header .logo img{
+    height: 30px;
+}
+.header .logo span{
+    float: right;
+    
+}
+.header .logo span a{
+    color: rgba(30, 210, 255);
+    margin-right: 10px;
+}
+.header .logo .tocart{
+    margin-right: 40px;
+}
+.nav{
+   height: 80px;
+   background-color: rgba(30, 210, 255); 
+}
+.nav .shoptitle{
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+    display: inline;
+    vertical-align: 50%;
+}
+.nav img{
+    height: 60px;
+    margin-top: 10px;
+}
+.nav .navbox{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.addressbox{
+    width: 1000px;
+    margin: 0 auto;;
+}
+.addressbox .address{
+    font-weight: bold;
+    margin-left: 20px;
+}
+.addressbox .address div{
+    margin-top: 10px;
+}
+.addressbox .address span{
+    padding: 10px;
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+.addressbox .address input{
+    width: 160px;
+}
+.addressbox .address .add{
+    height: 50px;
+    width: 320px;
+}
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+.title{
+    width: 1000px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    border-bottom:2px solid #b2d1ff;;
+}
+.title span{
+    font-size: 12px;
+}
+.title .title1{
+    margin-left: 140px;
+}
+.title .title2{
+    margin-left: 300px;
+}
+.title .title3{
+    margin-left: 112px;
+}
+.title .title4{
+    margin-left: 155px;
+}
+.main  .cartbox{
+    border-top: 1px dotted #80b2ff;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted  rgb(221, 221, 221);
+}
+.main .cartbox .cartcom{
+    background: rgb(251, 252, 255);;
+    border-bottom: 1px solid #e7e7e7;
+    height: 90px;
+    border-bottom: 1px dotted rgb(221, 221, 221);
+}
+.main .cartcom .td{
+    float: left;
+    min-height: 79px;
+    height: 79px;
+}
+.cartcom .item_pic{
+    margin: 5px;
+}
+.cartcom .comname{
+    margin-left: 40px;
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+    color: black;
+    width: 250px;
+}
+.cartcom .comname:hover{
+    color: rgba(30, 210, 255);
+    text-decoration: underline;
+}
+.cartcom ul .td span{
+    display: inline-block;
+    margin: 20px;
+}
+.cartcom ul .td_item{
+    width: 400px;
+}
+.cartcom ul .td_price{
+    color: #f40;
+    font-weight: bolder;
+    width: 200px;
+    text-align: center;
+}
+.cartcom ul .td_num{
+    text-align: center;
+    width: 90px;
+}
+.cartcom ul .td_num img{
+    vertical-align: -6px;
+    margin: 0 5px;
+    width: 20px;
+}
+.cartcom ul .td_num .textbox{
+    width: 36px;
+    height: 26px;
+}
+.cartcom ul .td_money{
+    text-align: center;
+    width: 150px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.cartcom ul .td_del{
+    text-align: center;
+    width: 100px;
+}
+.cartcom ul .td_del a{
+    color: black;
+}
+.cartcom ul .td_del a:hover{
+    color: rgba(30,210,255);
+}
+.smallimg{
+    margin: 5px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+.smallimg img{
+    width: 80px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.cartbox .text{
+    background-color: rgb(242, 247, 255);
+    position: relative;
+    height: 150px;
+}
+.cartbox .text .toseller{
+    font-size: 13px;
+    position: absolute;
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #fff;
+    height: 148px;
+    
+}
+.text .toseller span{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.text .toseller .memo{
+    width: 310px;
+    height: 70px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.text .toseller .textarea{
+    color: #333;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    background-color: transparent;
+    resize: none;
+}
+.cartbox .text .sumres{
+    position: absolute;
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #fff;
+    margin-left: 50%;
+    height: 148px;
+    text-align: right;
+}
+.text .sumres .label{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+.buywrap{
+    height: 130px;
+    position: relative;
+    text-align: right;
+}
+.buywrap .buybox{
+    display: inline-block;
+    border: 1px solid rgba(30,210,255);
+    font-size: 12px;
+}
+.buywrap .buybox .box_shadow {
+    border: 3px solid #fff0e8;
+    min-width: 230px;
+    padding: 10px 5px 10px 20px;
+}
+
+.box_shadow .box_money .realpay--title {
+    font-weight: 700;
+    color: #333;
+}
+.box_shadow .box_money .realpay--price-symbol {
+    font-size: 26px;
+    margin-right: 4px;
+    color: #999;
+}
+.box_shadow .box_money  .realpay--price {
+    color: #36c;
+    font: 700 26px tahoma;
+}
+.main .confirmAddr-addr{
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.confirmAddr-addr .confirmAddr-title {
+    font-weight: 700;
+    color: #333;
+}
+
+.confirmAddr-addr-user .confirmAddr-title {
+    font-weight: 700;
+    color: #333;
+}
+.submitOrder-container {
+    text-align: right;
+    margin-top: -1px;
+}
+.wrapper {
+    display: inline-block;
+    padding: 0 0 5px 5px;
+}
+.submitOrder-container .go-back {
+    color: rgba(30, 210, 255);
+    text-decoration: none;
+    margin-right: 50px;
+    line-height: 34px;
+}
+.submitOrder-container .go-back:hover{
+    color: #dd2727;
+}
+.submitOrder-container .go-btn {
+    display: inline-block;
+    width: 182px;
+    height: 39px;
+    position: relative;
+    vertical-align: middle;
+    line-height: 39px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    background: #36c;
+    color: #fff;
+}
+.ordersuccess,.orderfailed{
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 1000;
+}
+.ordersuccess .sucwrap{
+    width: 380px;
+    height: 110px;
+    top: 40%;
+    left: 40%;
+    position: fixed;
+    background-color: #fff;
+    border:1px solid rgba(30, 210, 255) ;
+    display : none;
+}
+.orderfailed .sucwrap{
+    width: 380px;
+    height: 110px;
+    top: 40%;
+    left: 40%;
+    position: fixed;
+    background-color: #fff;
+    border:1px solid rgba(30, 210, 255) ;
+}
+.sucwrap .success{
+    display: inline-block;
+    height: 80%;
+    cursor: pointer;
+    float: left;
+}
+.sucwrap .success img{
+    height: 100%;
+    margin: 10%;
+}
+.sucwrap .suctext{
+    position: absolute;
+    color: black;
+    top: 15px;
+    left: 110px;
+}
+.sucwrap .suctext h2{
+    color: #aaa;
+    margin-top: 10px;
+}
+.sucwrap .suctext div{
+    margin-top: 10px;
+}
+.sucwrap .suctext div a{
+    color: rgb(30,210,255);
+}

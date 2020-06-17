@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* background-color: rgb(30, 210, 255); */
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+a{  
+    color:#fff;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+em{
+    font-style: normal;
+    font-size: 12px;
+}
+.page{
+    width: 100%;
+}
+.header{
+    padding: 22px 0;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 990px;
+}
+.header .logo img{
+    height: 30px;
+}
+.header .logo span{
+    float: right;
+    
+}
+.header .logo span a{
+    color: rgba(30, 210, 255);
+    margin-right: 10px;
+}
+.header .logo .tocart{
+    margin-right: 40px;
+}
+.nav{
+   height: 80px;
+   background-color: rgba(30, 210, 255); 
+   margin-bottom: 40px;
+}
+.nav .shoptitle{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 80px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #eee;
+    min-width: 990px;
+}
+.page .content .detail{
+    width: 1000px!important;
+    margin: 0 auto;
+}
+.content .detail .combox{
+    float: left;
+    width: 100%;
+}
+.combox .comimgbox{
+    display: inline-block;
+}
+.combox .comimgbox .imgwrap{
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 375px;
+    height: 500px;
+    position: relative;
+    overflow:hidden;
+}
+.comimgbox .imgwrap .mainimg{
+    position: absolute;
+    width: 375px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.comimgbox .imgwrap .wrap{
+    width: 100%;
+    height: 110px;
+    background: rgba(255,255,255,0.3);
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.smallimg{
+    margin: 5px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.smallimg img{
+    width: 100px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.content .detail .infobox{
+    float: right;
+    display: inline-block;
+    width: 450px;
+}
+.infobox .infotitle{
+    font-size: 20px;
+    color: #000;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.infobox .pricebox ul{
+    background-color: rgba(30,210,255,0.2);
+    font-size: 14px;
+}
+.infobox ul{
+    padding: 10px;
+}
+.infobox ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.infobox ,.pricebox{
+    color: #aaa;
+}
+.infobox .pricebox p{
+    display: inline-block;
+    width: 120px;
+}
+.infobox .pricebox del{
+    display: inline-block;
+    width: 100px;
+}
+.infobox .pricebox span{
+    color: #f40;
+    font-size: 20px;
+}
+.infobox .pricebox .price{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.infobox .invent  li{
+    margin:30px 0;
+}
+.infobox .invent  li .textbox{
+    width: 36px;
+    height: 26px;
+}
+.infobox .invent  li img{
+    vertical-align: -6px;
+    margin: 0 5px;
+    width: 20px;
+}
+.infobox .invent span{
+    display: inline-block;
+    width: 120px;
+}
+.infobox .invent .intro{
+    vertical-align: top; 
+}
+.infobox .invent .introduce{
+    display: inline-block;
+    width: 300px;
+}
+.infobox .buybox{
+    display: inline-block;
+    margin: 10px 10px;
+}
+.infobox .buybox .box{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0,210,255);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+   
+}
+.infobox .buybox .buynow{
+    background-color: rgba(30,210,255,0.2);
+    color: rgba(0,210,255);
+    margin-right: 10px;
+}
+.infobox .buybox .addcart{
+    background-color: rgb(30,210,255);
+    color: #fff;
+}
+.infobox .buybox .addcart img{
+    vertical-align: -5px;
+    margin-right: 5px;
+}
+.addver{
+    font-size: 16px;
+    color: #aaa;
+    position: fixed;
+    right: 0;
+    top: 22%;
+}
+.addver .addtitle{
+    color: black;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.addver .guess {
+    border-bottom: 1px solid #ccc;
+}
+.addver .guess .guesstitle{
+    font-size: 12px;
+    color: #aaa;
+}
+.addver .guess .smallwrap{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:red;
+    line-height: 30px;
+}
+
+.addsuccess{
+    position: fixed;
+    width: 380px;
+    height: 110px;
+    background-color: #fff;
+    top: 40%;
+    left: 40%;
+    border: 1px solid  rgb(30,210,255);
+    display: none;
+}
+.addsuccess .close{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+}
+.addsuccess .close img{
+    width: 100%;
+}
+.addsuccess .success{
+    display: inline-block;
+    height: 80%;
+    cursor: pointer;
+    float: left;
+}
+.addsuccess .success img{
+    height: 100%;
+    margin: 10%;
+}
+.addsuccess .suctext{
+    position: absolute;
+    color: black;
+    top: 15px;
+    left: 110px;
+}
+.addsuccess .suctext h2{
+    color: #aaa;
+    margin-top: 10px;
+}
+.addsuccess .suctext div{
+    margin-top: 10px;
+}
+.addsuccess .suctext div a{
+    color: rgb(30,210,255);
+}

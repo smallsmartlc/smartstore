@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* background-color: rgb(30, 210, 255); */
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    overflow-y:auto; overflow-x:auto;
+}
+a{  
+    color:#fff;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+.main .mainbackwrap .mainback::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    scrollbar-arrow-color:red;
+}
+.main .mainbackwrap .mainback::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    background: rgba(0,0,0,0.2);
+    scrollbar-arrow-color:red;
+}
+.main .mainbackwrap .mainback::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.header{
+    padding: 22px 0;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 990px;
+}
+.header .logo img{
+    height: 30px;
+}
+.header .logo span{
+    float: right;
+    
+}
+.header .logo span a{
+    color: rgba(30, 210, 255);
+    margin-right: 10px;
+}
+.header .logo .tocart{
+    margin-right: 40px;
+}
+.nav{
+   height: 40px;
+   background-color: rgba(30, 210, 255); 
+}
+.main{
+    background-color: rgba(30, 210, 255);
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    min-width: 1200px;
+}
+.main .mainbackwrap{
+    margin: 0 auto;
+    width: 1135px;
+}
+.main .mainbackwrap .mainback{
+    display: inline-block;
+    height: 550px;
+    width: 1135px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 0 20px #fff;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.mainbackwrap .mainback .combox{
+    display: inline-block;
+    margin:0 10px;
+    margin-bottom: 10px;
+}
+.mainback .combox .com{
+    float: left;
+    margin:0 10px;
+    margin-bottom: 20px;
+    width:200px;
+    height:250px;
+    border: 1px solid #ccc;
+}
+.mainback .combox .com:hover{
+    border-color: rgba(30, 210, 255);
+}
+.combox .com .image{
+    display: inline-block;
+    background-color: #fff;
+    margin:0 10px;
+    margin-top: 10px;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    position:relative;
+}
+.combox .com .image img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.combox .com .price{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #f40;
+    line-height: 20px;
+}
+.com .price span{
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.combox .com .comtitle{
+    margin-left: 10px;
+    font-size: 12px;
+    color: black;
+}
+.combox .com .seller{
+    margin-left: 10px;
+    font-size: 12px;
+    color: #aaa;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartstore--重庆邮电大学18栋705最大的在线商城</title>
+</head>
+<link rel="stylesheet" href="css/register.css">
+<body>
+    <div class="page">
+    	<div class="registersuccess" style="display : none;">
+            <div class="sucwrap">
+                <div class="success"><img src="img/success.png"></div>
+                <div class="suctext">
+                    <h2>注册成功!!!</h2>
+                    <div>将在三秒后<a href="storelist.jsp">返回登陆</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" title="smartstore--重庆邮电大学18栋705最大的在线商城"><img src="img/logo(hd).png"><img src="img/bluelogo.png" ></a>
+                <span><a href="login.html">登陆</a><a href="register.html">注册</a></span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="nav"></div>
+            <div class="title-line">
+                <span class="title">注册</span>
+            </div>
+            <div class="regbox">
+                <div>
+                    <input id="memberid" type="text" name="memberID" maxlength="10" placeholder="账号(只能输入数字)" autocomplete="off" required="required" oninput="value=value.replace(/[^\d]/g,'')">
+                    <input id="membername" type="text" name="memberName" maxlength="20" placeholder="用户名" autocomplete="off" required="required">
+                    <input id="password" type="password" name="pwd" maxlength="20" placeholder="密码" autocomplete="off" required="required">
+                    <input id="phoneCode" type="text" name="phoneCode" maxlength="11"  placeholder="电话号码" autocomplete="off" required="required" oninput="value=value.replace(/[^\d]/g,'')">
+                    <input id="email" type="text" name="email" placeholder="邮箱" autocomplete="off">
+                    <input id="btnLoad" class="submit" name="Submit" value="注册" type="button">
+                </div>
+                <div id="divfail" style="text-align: center; color: red; display: none;">该账户已被注册</div>
+                <div id="nullid" style="text-align: center; color: red; display: none;">账号不能为空</div>
+                <div id="nullname" style="text-align: center; color: red; display: none;">用户名不能为空</div>
+                <div id="nullpwd" style="text-align: center; color: red; display: none;">密码不能为空</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var memberID = document.getElementById("memberid");
+    var memberName = document.getElementById("membername");
+    var pwd = document.getElementById("password");
+    var phoneCode = document.getElementById("phoneCode");
+    var mail = document.getElementById("email");
+    var sucbox = document.getElementsByClassName("registersuccess")[0];
+    var fail = document.getElementById("divfail");
+    document.getElementById("btnLoad").onclick = function () {
+        document.getElementById("nullid").style.display="none";
+        document.getElementById("nullname").style.display="none";
+        document.getElementById("nullpwd").style.display="none";
+        fail.style.display = "none";
+        if(!memberID.value){
+            document.getElementById("nullid").style.display="block";
+            return;
+        }
+        if(!memberName.value){
+            document.getElementById("nullname").style.display="block";
+            return;
+        }
+        if(!pwd.value){
+            document.getElementById("nullpwd").style.display="block";
+            return;
+        }
+        
+        var data = "memberID=" + memberID.value+
+		        	"&memberName=" + memberName.value+
+		        	"&pwd=" + pwd.value+
+		        	"&phoneCode=" + phoneCode.value+
+		        	"&email=" + mail.value;
+        var xmlhttp;
+        if (window.XMLHttpRequest){
+          xmlhttp = new XMLHttpRequest();
+        }else {
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+        }
+     // 2. 发送Ajax请求
+        xmlhttp.open("POST","registerservice",true);
+        xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xmlhttp.send(data);
+        // 3. 处理服务器响应
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
+            var t= xmlhttp.responseText.trim();
+            if(parseInt(t)>=0){
+          	  sucbox.style.display = "block";
+          	  setTimeout(function(){
+          	        window.location.href='login.html';
+          	    },3000)
+            }else{
+          	  fail.style.display = "block";
+            }
+          }
+        }
+    }
+</script>
+</html>

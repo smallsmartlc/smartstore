@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* background-color: rgb(30, 210, 255); */
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+a{  
+    color:#fff;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+
+.headerWrapper{
+    width: 100%;
+}
+.headerWrapper .header_title{
+    margin: 0 auto;
+    height: 60px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    width: 60%;
+    min-width: 990px;
+}
+.header_title .logo{
+    float: left;
+}
+.logo img{
+   height: 50px;
+}
+.logo span{
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 60px;
+    color: rgb(1, 146, 156);
+ }
+.header_title .enter_store a{
+    float: right;
+    color:  rgb(30, 210, 255);
+    font-size: 25px;
+    line-height: 60px;
+}
+.nav{
+    height: 40px;
+    background-color: rgb(30,210,255);
+    min-width: 990px;
+}
+.main{
+    background-color: rgb(209, 255, 43);
+}
+.main img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin:0 auto;
+    min-width: 990px;
+}
+.footer_wrapper{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(30,210,255);
+    min-width: 990px;
+    
+}
+.footer{
+    margin: auto;
+    width: 70%;
+    padding-top: 30px;
+    min-width: 990px;
+}
+.footer .logo{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+}
+.footer .logo .logocart{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+.footer .logo a img{
+   height: 40px;
+}
+.footer .sitemap{
+    display: inline-block;
+    color: white;
+}
+.footer .sitemap .col{
+    width: 170px;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: top;
+}
+.footer .sitemap .col span{
+    font-weight: bold;
+}
+.footer .sitemap a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+}

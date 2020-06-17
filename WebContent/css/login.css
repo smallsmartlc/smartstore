@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* background-color: rgb(30, 210, 255); */
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+a{  
+    color:#fff;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+.header{
+    padding: 22px 0;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 990px;
+}
+.header .logo img{
+    height: 30px;
+}
+.header .logo span{
+    float: right;
+    
+}
+.header .logo span a{
+    color: rgba(30, 210, 255);
+}
+.main{
+    width: 100%;
+    height: 500px;
+    background-color:rgb(30,210,255);
+    min-width: 1500px;
+}
+.main .add{
+    position: absolute;
+    top: 140px;
+    left: 200px;
+}
+.content{
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.content .loginbox_wrap{
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.loginbox_wrap .loginbox{
+    width: 300px;
+    min-height: 350px;
+    padding: 25px 25px 23px;
+    color: #6c6c6c;
+    background:  rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.loginbox_wrap .loginbox .login_content{
+    width: 100%;
+
+}
+.loginbox .login_content .loginpwd{
+    font-family:sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px auto;
+}
+.loginbox .login_content .loginform{
+    text-align: center;
+}
+.loginform input{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    color: black;
+    transition: 0.25s;
+}
+.loginform input[type="text"],.loginform input[type="password"]{
+    border: 2px solid rgb(30,210,255);
+    padding: 10px 10px;
+    width: 180px;
+}
+.loginform input[type="text"]:focus,.loginform input[type="password"]:focus{
+    width: 250px;
+    border-color: #f734d6;
+}
+.loginform input[type="button"]{
+    border: 2px solid #2ecc71;
+    width: 100px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.loginform input[type="submit"]:hover{
+    background-color: #2ecc71;
+}
+/*登陆成功*/
+.loginsuccess{
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 1000; 
+}
+.loginsuccess .sucwrap{
+    width: 380px;
+    height: 110px;
+    top: 40%;
+    left: 40%;
+    position: fixed;
+    background-color: #fff;
+    border:1px solid rgba(30, 210, 255) ;
+}
+.sucwrap .success{
+    display: inline-block;
+    height: 80%;
+    cursor: pointer;
+    float: left;
+}
+.sucwrap .success img{
+    height: 100%;
+    margin: 10%;
+}
+.sucwrap .suctext{
+    position: absolute;
+    color: black;
+    top: 15px;
+    left: 110px;
+}
+.sucwrap .suctext h2{
+    color: #aaa;
+}
+.sucwrap .suctext div{
+    margin-top: 5px;
+}
+.sucwrap .suctext div a{
+    color: rgb(30,210,255);
+}

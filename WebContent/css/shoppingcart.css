@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* background-color: rgb(30, 210, 255); */
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+a{  
+    color:#fff;
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+em{
+    font-style: normal;
+    font-size: 12px;
+}
+.page{
+    width: 100%;
+}
+.smallimg{
+    margin: 5px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+.smallimg img{
+    width: 80px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.header{
+    padding: 22px 0;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 990px;
+}
+.header .logo img{
+    height: 30px;
+}
+.header .logo span{
+    float: right;
+    
+}
+.header .logo span a{
+    color: rgba(30, 210, 255);
+    margin-right: 10px;
+}
+.header .logo .tocart{
+    margin-right: 40px;
+}
+.nav{
+   height: 80px;
+   background-color: rgba(30, 210, 255); 
+   margin-bottom: 40px;
+}
+.nav .shoptitle{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 80px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+    min-width: 990px;
+}
+.main{
+    display: block;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.title{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.title span{
+    font-size: 12px;
+}
+.title .title1{
+    margin-left: 124px;
+}
+.title .title2{
+    margin-left: 310px;
+}
+.title .title3{
+    margin-left: 112px;
+}
+.title .title4{
+    margin-left: 155px;
+}
+.title .title5{
+    margin-left: 98px;
+}
+.main .cartcom{
+    background: #fcfcfc;
+    border-bottom: 1px solid #e7e7e7;
+    height: 120px;
+}
+.main .cartcom .td{
+    float: left;
+    min-height: 119px;
+    height: 119px;
+}
+.cartcom .item_pic{
+    margin: 20px;
+}
+.cartcom .comname{
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+    color: black;
+    width: 250px;
+}
+.cartcom .comname:hover{
+    color: rgba(30, 210, 255);
+    text-decoration: underline;
+}
+.cartcom ul .td span{
+    display: inline-block;
+    margin: 20px;
+}
+.cartcom ul .td_item{
+    width: 400px;
+}
+.cartcom ul .td_price{
+    color: #f40;
+    font-weight: bolder;
+    width: 200px;
+    text-align: center;
+}
+.cartcom ul .td_num{
+    width: 150px;
+}
+.cartcom ul .td_num img{
+    vertical-align: -6px;
+    margin: 0 5px;
+    width: 20px;
+}
+.cartcom ul .td_num .textbox{
+    width: 36px;
+    height: 26px;
+}
+.cartcom ul .td_money{
+    text-align: center;
+    width: 150px;
+    font-weight: bolder;
+}
+.cartcom ul .td_del{
+    text-align: center;
+    width: 100px;
+}
+.cartcom ul .td_del a{
+    color: black;
+}
+.cartcom ul .td_del a:hover{
+    color: rgba(30,210,255);
+}
+.order {
+    width: 1000px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    border: 2px solid #eee;
+}
+.order span{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    color: #3c3c3c;
+}
+.order a{
+    color: #3c3c3c;
+}
+.order .delcom{
+    margin-left: 40px;
+    float: left;
+}
+.order .summoney{
+    margin-right: 20px;
+    float: right;
+}
+.order .summoney span{
+    color: #f40;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.order .summoney span i{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: lighter;
+}
+.order .toorder{
+    background-color: rgba(30, 210, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    float: right;
+}
+.order .toorder a{
+    color: #fff;
+}
